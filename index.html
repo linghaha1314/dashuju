@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>数据可视化驾驶舱</title>
+	<link rel="stylesheet" href="fonts/icomoon.css" />
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<script src="js/echarts.min.js"></script>
+	<script src="js/flexible.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- 父容器大盒子 -->
+	<div class="viewport">
+		<div class="column">
+			<!-- 概览区域模块制作 -->
+			<div class="panel overview">
+				<div class="inner">
+					<ul>
+						<li>
+							<h4>231</h4>
+							<span>
+								<i class="icon-dot" style="color: #006cff"></i>
+								课程建设
+							</span>
+						</li>
+						<li class="item">
+							<h4>310</h4>
+							<span>
+								<i class="icon-dot" style="color: #6acca3"></i>
+								学员人数
+							</span>
+						</li>
+						<li>
+							<h4>999</h4>
+							<span>
+								<i class="icon-dot" style="color: #6acca3"></i>
+								客户数量
+							</span>
+						</li>
+						<li>
+							<h4>271</h4>
+							<span>
+								<i class="icon-dot" style="color: #ed3f35"></i>
+								在线人数
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 监控区域模块制作 -->
+			<div class="panel monitor">
+				<div class="inner">
+					<div class="tabs">
+						<a href="javascript:;" class="active">课程名称</a>
+						<a href="javascript:;">学员排名</a>
+					</div>
+					<div class="content" style="display: block;">
+						<div class="head">
+							<span class="col">开设时间</span>
+							<span class="col">课程名称</span>
+							<span class="col">状态</span>
+						</div>
+						<div class="marquee-view">
+							<div class="marquee">
+								<div class="row">
+									<span class="col">20240123</span>
+									<span class="col">基础医学综合</span>
+									<span class="col">已开始</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240125</span>
+									<span class="col">临床医学综合</span>
+									<span class="col">已开始</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240221</span>
+									<span class="col">临床基本操作技能</span>
+									<span class="col">已开始</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240315</span>
+									<span class="col">预防医学</span>
+									<span class="col">已开始</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240606</span>
+									<span class="col">病史采集</span>
+									<span class="col">待建设</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240624</span>
+									<span class="col">体格检查</span>
+									<span class="col">进行中</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240701</span>
+									<span class="col">公共卫生基本操作</span>
+									<span class="col">进行中</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20190701</span>
+									<span class="col">医学人文综合</span>
+									<span class="col">未开始</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240728</span>
+									<span class="col">外科</span>
+									<span class="col">进行中</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">20240901</span>
+									<span class="col">实践技能</span>
+									<span class="col">未开始</span>
+									<span class="icon-dot"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<div class="head">
+							<span class="col">学员姓名</span>
+							<span class="col">考核姓名</span>
+							<span class="col">成绩</span>
+						</div>
+						<div class="marquee-view">
+							<div class="marquee">
+								<div class="row">
+									<span class="col">张三</span>
+									<span class="col">静脉输液考核项目</span>
+									<span class="col">88</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">李四</span>
+									<span class="col">院前急救项目</span>
+									<span class="col">99</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">王小二</span>
+									<span class="col">中医推拿项目</span>
+									<span class="col">72</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">赵磊</span>
+									<span class="col">脊椎穿刺项目</span>
+									<span class="col">66</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">李宗盛</span>
+									<span class="col">留置针考核项目</span>
+									<span class="col">100</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">冯赵丹</span>
+									<span class="col">骨折搬运项目</span>
+									<span class="col">100</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">马小二</span>
+									<span class="col">包扎止血项目</span>
+									<span class="col">75</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">王斌</span>
+									<span class="col">人工呼吸项目</span>
+									<span class="col">76</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">张雷</span>
+									<span class="col">伤口缝合项目</span>
+									<span class="col">88</span>
+									<span class="icon-dot"></span>
+								</div>
+								<div class="row">
+									<span class="col">孙鑫</span>
+									<span class="col">病史采集</span>
+									<span class="col">98</span>
+									<span class="icon-dot"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 点位分布统计模块制作 -->
+			<div class="point panel">
+				<div class="inner">
+					<h3>课程综合分布统计</h3>
+					<div class="chart">
+						<div class="pie"></div>
+						<div class="data">
+							<div class="item">
+								<h4>8</h4>
+								<span>
+									<i class="icon-dot" style="color: #ed3f35"></i>
+									分析角度
+								</span>
+							</div>
+							<div class="item">
+								<h4>5</h4>
+								<span>
+									<i class="icon-dot" style="color: #eacf19"></i>
+									本月拟定新增
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<!-- 地图模块 -->
+			<!-- <div class="map">
+					<h3>
+						<span class="icon-cube"></span>
+						培训中心拟建设方向
+					</h3>
+					<div class="chart">
+						<div class="geo"></div>
+					</div>
+				</div> -->
+			<!-- 用户统计模块 -->
+
+
+			<div class="users panel">
+				<div class="inner">
+					<h3>课程学习点击量</h3>
+					<div class="chart">
+						<div class="bar"></div>
+						<div class="data">
+							<div class="item">
+								<h4>1,899</h4>
+								<span>
+									<i class="icon-dot" style="color: #ed3f35"></i>
+									用户总量
+								</span>
+							</div>
+							<div class="item">
+								<h4>248</h4>
+								<span>
+									<i class="icon-dot" style="color: #eacf19"></i>
+									本月新增
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="users panel">
+				<div class="inner">
+					<!-- <h3>轮播展示</h3> -->
+					<div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="cross-data" style="width: 100%; height: 350px;">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="pie-data" style="width: 100%; height: 350px;">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="low-data" style="width: 100%; height: 350px;">
+									</div>
+								</div>
+								<!-- 可以添加更多的 slide -->
+							</div>
+							<!-- 添加分页器 -->
+							<!-- <div class="swiper-pagination"></div> -->
+							<!-- 添加左右导航按钮 -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 订单 -->
+			<div class="order panel">
+				<div class="inner">
+					<!-- 筛选 -->
+					<div class="filter">
+						<a href="javascript:;" class="active">365天</a>
+						<a href="javascript:;">90天</a>
+						<a href="javascript:;">30天</a>
+						<a href="javascript:;">24小时</a>
+					</div>
+					<!-- 数据 -->
+					<div class="data">
+						<div class="item">
+							<h4>2,123</h4>
+							<span>
+								<i class="icon-dot" style="color: #ed3f35;"></i>
+								累计播放时长
+							</span>
+						</div>
+						<div class="item">
+							<h4>5,48</h4>
+							<span>
+								<i class="icon-dot" style="color: #eacf19;"></i>
+								系统登录频次
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<!-- 订单 -->
+			<div class="order panel">
+				<div class="inner">
+					<!-- 筛选 -->
+					<div class="filter">
+						<a href="javascript:;" class="active">365天</a>
+						<a href="javascript:;">90天</a>
+						<a href="javascript:;">30天</a>
+						<a href="javascript:;">24小时</a>
+					</div>
+					<!-- 数据 -->
+					<div class="data">
+						<div class="item">
+							<h4>2,123</h4>
+							<span>
+								<i class="icon-dot" style="color: #ed3f35;"></i>
+								累计播放时长
+							</span>
+						</div>
+						<div class="item">
+							<h4>5,48</h4>
+							<span>
+								<i class="icon-dot" style="color: #eacf19;"></i>
+								系统登录频次
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 销售额 -->
+			<div class="sales panel">
+				<div class="inner">
+					<div class="caption">
+						<h3>学员成绩曲线图</h3>
+						<a href="javascript:;" class="active" data-type="year">年</a>
+						<a href="javascript:;" data-type="quarter">季</a>
+						<a href="javascript:;" data-type="month">月</a>
+						<a href="javascript:;" data-type="week">周</a>
+					</div>
+					<div class="chart">
+						<div class="label">单位:分</div>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 渠道分布以及季度销售模块 -->
+			<div class="wrap">
+				<div class="channel panel">
+					<div class="inner">
+						<h3>学员考核成绩分布</h3>
+						<div class="data">
+							<div class="radar"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 销售进度模块 -->
+				<div class="quarter panel">
+					<div class="inner">
+						<h3>某项技能考核优秀率分析</h3>
+						<div class="chart">
+							<div class="box">
+								<div class="gauge"></div>
+								<div class="label">60<small> %</small></div>
+							</div>
+							<div class="data">
+								<div class="item">
+									<h4>416</h4>
+									<span>
+										<i class="icon-dot" style="color: #6acca3"></i>
+										考核人数(次/人)
+									</span>
+								</div>
+								<div class="item">
+									<h4>40%</h4>
+									<span>
+										<i class="icon-dot" style="color: #ed3f35"></i>
+										合格率
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 全国热榜模块制作 -->
+			<div class="top panel">
+				<div class="inner">
+					<div class="all">
+						<h3>热门课程</h3>
+						<ul>
+							<li>
+								<i class="icon-cup1" style="color: #d93f36;"></i>
+								战伤急救
+							</li>
+							<li>
+								<i class="icon-cup2" style="color: #68d8fe;"></i>
+								护理技能
+							</li>
+							<li>
+								<i class="icon-cup3" style="color: #4c9bfd;"></i>
+								中医推拿
+							</li>
+						</ul>
+					</div>
+					<div class="province">
+						<h3>课程排名 <i class="date">// 近30日 //</i></h3>
+						<div class="data">
+							<ul class="sup">
+								<!-- <li>
+                    <span>北京</span>
+                    <span>25,179 <s class="icon-up"></s></span>
+                  </li>
+                  <li>
+                    <span>河北</span>
+                    <span>23,252 <s class="icon-down"></s></span>
+                  </li> -->
+							</ul>
+							<ul class="sub">
+								<!-- <li><span></span><span> <s class="icon-up"></s></span></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+	<!-- 想使用中国地图必须先引用这个china.js文件 -->
+	<script src="js/china.js"></script>
+	<!-- 引入我们自己的地图js文件 -->
+	<script src="js/myMap.js"></script>
+</body>
+
+</html>
